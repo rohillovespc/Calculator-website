@@ -1,0 +1,180 @@
+body{
+	
+}
+#navbar{
+	border-bottom: 0.5px solid rgba(62, 60, 60, 0.15);
+	font-size: 1.2rem;
+	font-family: Raleway;
+	animation-name: navbarAni;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes navbarAni {
+	0%{top: -100px}
+	100%{top: 0px};
+}
+@media screen and (max-width: 555px) {
+	#category-title{
+		font-size: 38px;
+		}
+}
+
+@media screen and (max-width: 402px) {
+	.navbar-toggler {
+		margin-top: 20px;
+		margin-left: 150px;
+		margin-bottom: 30px
+	}
+	#logo{
+		margin-left: 38px;
+	}
+}
+
+
+#logo{
+	width: auto;
+	height: 28px;
+	padding: 3px;
+}
+
+.container-fluid.paragraph {
+	font-family: Do Hyeon;
+	padding: 25px;
+    background-color: rgba(147, 173, 255, 0.28);
+	
+}
+
+.container-fluid.paragraph  p{
+	margin-top: 12px;
+	font-size: 1.2rem;
+}
+
+
+.blockquote-footer{
+	font-size: 20px;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+	font-family: roboto;
+	
+}
+#category-title {
+	margin-top: 55px;
+	animation-name: categoranimation;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	position: relative;
+	
+	opacity: 0;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+}
+@keyframes categoranimation{
+	0%{left: -500px; opacity: 0;}
+	100%{left: 0;opacity: 1}
+}
+
+
+.card-title{
+margin-top: 15px;
+}
+
+.container-fluid.card{
+background-color: rgba(255, 230, 230, 0.85);
+	
+}
+
+.card-image{
+	animation-name: cardimage;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes cardimage{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+
+/******************Maths calculators*********************/
+#contact-para {
+	font-size: 30px;
+	padding: 20px;
+	margin: 75px;
+	
+}
+
+#about-button{
+	height: 68px;
+	width: 380px;
+	margin-left: 35%;
+	
+}
+
+
+#free-connect{
+font-size: 32px;
+padding: 20px;
+margin-left: 75px;
+	margin-bottom: 25px;
+}
+
+#about-button span{
+	font-size: 30px;
+	margin-top: 15px;
+	margin-left: 5px;
+	
+}
+.container.icons{
+	width: 800px;
+	float: left;
+	margin-left: 25%;
+}
+#media-icons{
+	width: auto;
+	height: 40px;
+	color: white;
+	margin-top: -50px;
+	animation-name: icons;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	position: relative;
+}
+@keyframes icons{
+	0%{bottom:-120px;}
+	100%{bottom: 0px;}
+}
+#about-button {
+	opacity: 0;
+	animation-name: aboutbtn;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes aboutbtn{
+	0%{opacity: 0}
+	100%{opacity: 1};
+}
+
+/************************About *****************************/
+
+#my-image{
+	border-radius: 50%;
+	margin-top: 40px;
+	height: auto;
+	width: 250px;
+}
+
+#about-para {
+	margin-top: 80px;
+	font-size: 22px;
+	font-family: Sawarabi Gothic;
+	line-height: 38px;
+}
+
+#about-para2{
+	margin-left: 320px;
+	font-size: 22px;
+	font-family: Roboto;
+	line-height: 38px;
+}

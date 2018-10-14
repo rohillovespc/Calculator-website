@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>R-Calculators.com</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Raleway|Sunflower:300|Titillium+Web|Roboto" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="fitness.css">
+</head>
+
+<body>
+
+	<!----------------------------Navigaetion Bat----------------------------->
+	<nav class="navbar navbar-expand-md navbar-light bg-light nav-fill" id="navbar">
+		<a class="navbar-brand mt-2" href="index.html"><img id="logo" src="Images/logo.png" alt="R-Calculators.com"></a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-expanded="false" aria-controls="navbar-elements" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbar-elements">
+			<div class="container">
+
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact-me.html">Contanct Me!</a></li>
+					<li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+
+	<h1 class="display-3" id="fitness-heading">Fitness Calculators</h1>
+	<div class="container">
+		<div class="row fitness">
+			<div class="col-sm-12 col-md-4">
+				<button class="btn btn-outline-light btn-lg " id="bmi-button" data-toggle="collapse" data-target="#bmi" aria-controls="bmi" aria-expanded="false"><span>B.M.I. CALCULATOR</span></button>
+
+
+
+				<div class="collapse" id="bmi">
+					<div class="jumbotron  mt-3">
+						<p class="text-justify">The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in meters. </p>
+						<p> Formula to calculate Equated Monthly Payment is :<br> <span><strong>S.I METRIC UNIT :-</strong> <br>
+								BMI = mass(Kg)/Height x Height</span> </p>
+						<label>Mass(kg) :-</label>
+						<input class="form-controls form-controls-lg" type="number" id="bmi-mass">
+						<br>
+						<label>Height(m) :-</label>
+						<input class="form-controls form-controls-lg" type="number" id="bmi-height">
+						<br>
+
+
+						<button id="calculate-bmi" class="btn btn-lg mt-3">Calculate</button>
+						<p id="bmi-para"></p>
+					</div>
+				</div>
+			</div>
+			<!--
+			<div class="col-sm-12 col-md-6 ">
+					<button class="btn btn-outline-light btn-lg " id="calorie-button" data-toggle="collapse" data-target="#calorie" aria-controls="calorie" aria-expanded="false"><span>CALORIE CALCULATOR</span></button>
+
+
+        
+					<div class="collapse" id="calorie">
+						<div class="jumbotron calorie mt-3">
+							<p class="text-justify">TA calorie or calory (archaic)is a unit of energy. Various definitions exist but fall into two broad categories. The first, the small calorie, or gram calorie (symbol: cal),is defined as the amount of heat energy needed to raise the temperature of one gram of water by one degree Celsius at a pressure of one atmosphere.The second, the large calorie or kilogram calorie (symbols:Cal, kcal), also known as the food calorie and similar names,is defined as the heat energy required to raise the temperature of one kilogram (rather than a gram) of water by one degree Celsius. It is equal to 1,000 small calories.<br> <span><strong>S.I METRIC UNIT :-</strong> <br>
+									BMI = mass(Kg)/Height x Height</span> </p>
+							<label>Mass(kg) :-</label>
+							<input class="form-controls form-controls-lg" type="number" id="calorie-mass">
+							<br>
+							<label>Height(m) :-</label>
+							<input class="form-controls form-controls-lg" type="number" id="calorie-height">
+							<br>
+                            <label>Age(y) :-</label>
+							<input class="form-controls form-controls-lg" type="number" id="calorie-age">
+							<br>
+							Gender:
+							<select  id="gender">
+								<option value="male">Male</option>
+								<option value="female">female</option>
+							</select>
+							<button type="button" onclick="calories()" id="calculate-calorie" class="btn btn-lg mt-3">Calculate</button>
+							<p id="calorie-para"></p>
+						</div>
+					</div>
+				</div> -->
+
+			<div class="col-sm-12 col-md-4">
+				<button class="btn btn-outline-light btn-lg" data-toggle="collapse" data-target="#lbm" aria-controls="lbm" id="lbm-button" aria-expanded:"false"><span>Lean Body Mass</span></button>
+
+				<div class="collapse" id="lbm">
+
+
+					<div class="jumbotron  mt-3">
+						<div class="container">
+							<div class="row">
+
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<button class="btn btn-outline-dark btn-lg" data-toggle="collapse" data-target="#lbmMale" aria-controls="lbmMale" id="lbm-button1" aria-expanded:"false"><span>For Males</span></button>
+
+									<div class="collapse" id="lbmMale">
+										<label>Weight(kg) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="lbm1-weight">
+										<br>
+
+										<label>Height(cms) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="lbm1-height">
+										<br>
+
+										<button type="button" id="calculate-maleLbm" class="btn btn-lg mt-3">Calculate</button>
+										<p id="lbm1-para"><strong></strong></p>
+									</div>
+
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<button class="btn btn-outline-dark btn-lg" data-toggle="collapse" data-target="#lbmFemale" aria-controls="lbmFemale" id="lbm-button2" aria-expanded:"false"><span>For Females</span></button>
+
+									<div class="collapse" id="lbmFemale">
+										<label>Weight(kg) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="lbm2-weight">
+										<br>
+
+										<label>Height(cms) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="lbm2-height">
+										<br>
+
+										<button type="button" id="calculate-femaleLbm" class="btn btn-lg mt-3">Calculate</button>
+										<p id="lbm2-para"></p>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+						<p class="text-justify">The percentage of total body mass that is lean is usually not quoted – it would typically be 60–90%. Instead, the body fat percentage, which is the complement, is computed, and is typically 10–40%. The lean body mass (LBM) has been described as an index superior to total body weight for prescribing proper levels of medications and for assessing metabolic disorders, as body fat is less relevant for metabolism. LBW is used by anesthesiologists to dose certain medications. For example, due to the concern of postoperative opioid-induced ventilatory depression in the obese patient, opioids are best based on lean body weight. The induction dose of propofol should also be based on LBW . </p>
+
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="col-sm-12 col-md-4">
+				<button class="btn btn-outline-light btn-lg" data-toggle="collapse" data-target="#bmr" aria-controls="bmr" id="bmr-button" aria-expanded:"false"><span>Basal Metabolic Rate</span></button>
+
+				<div class="collapse" id="bmr">
+
+
+					<div class="jumbotron  mt-3">
+						<div class="container">
+							<div class="row">
+
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<button class="btn btn-outline-dark btn-lg" data-toggle="collapse" data-target="#bmrMale" aria-controls="bmrMale" id="bmr-button1" aria-expanded:"false"><span>For Males</span></button>
+
+									<div class="collapse" id="bmrMale">
+										<label>Weight(kg) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="bmr1-weight">
+										<br>
+
+										<label>Height(cms) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="bmr1-height">
+										<br>
+
+										<label>Age(y) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="bmr1-age">
+										<br>
+
+										<button type="button" id="calculate-malebmr" class="btn btn-lg mt-3">Calculate</button>
+										<p id="bmr1-para"><strong></strong></p>
+									</div>
+
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<button class="btn btn-outline-dark btn-lg" data-toggle="collapse" data-target="#bmrFemale" aria-controls="bmrFemale" id="bmr-button2" aria-expanded:"false"><span>For Females</span></button>
+
+									<div class="collapse" id="bmrFemale">
+										<label>Weight(kg) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="bmr2-weight">
+										<br>
+
+										<label>Height(cms) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="bmr2-height">
+										<br>
+										<label>Age(y) :-</label>
+										<input class="form-controls form-controls-lg" type="number" id="bmr2-age">
+										<br>
+
+										<button type="button" id="calculate-femalebmr" class="btn btn-lg mt-3">Calculate</button>
+										<p id="bmr2-para"></p>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+						<p class="text-justify">The BMR is measured under very restrictive circumstances while awake. An accurate BMR measurement requires that a person's sympathetic nervous system is inactive, which means the person must be completely rested. Basal metabolism is usually the largest component of a person's total caloric needs. The daily caloric need is the BMR value multiplied by a factor with a value between 1.2 and 1.9, depending on activity level. </p>
+
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+	</div>
+
+	</div>
+	</div>
+
+
+
+	<script src="fitness.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>R-Calculators.com</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Raleway|Sunflower:300|Titillium+Web|Roboto|Open+Sans" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="maths.css">
+	
+</head>
+<body>
+
+   <!----------------------------Navigaetion Bat----------------------------->
+   
+	<nav class="navbar navbar-expand-md navbar-light bg-light nav-fill" id="navbar">
+		<a class="navbar-brand mt-2" href="index.html"><img id="logo" src="Images/logo.png" alt="R-Calculators.com"></a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-expanded="false" aria-controls="navbar-elements" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbar-elements">
+			<div class="container">
+			
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="contact-me.html">Contanct Me!</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+		</ul>
+			</div>	                    
+		</div>
+		
+	</nav>
+	
+<!------------------------------------Weight converters------------------------------------->
+    <div class="container-fluid">
+    <div id="main-heading"><h1 class="display-4 mt-5">Maths Calculators:-</h1></div>
+	
+		
+	
+	<div class="container converters ml-5 mt-5">
+	<div class="jumbotron converters" id="converter-jumbotron">
+	<h2 class="display-4 mb-5" >Converters:-</h2>
+		<div class="row">
+		
+	<!------------------------Weight converter-------------------------->	
+		
+			<div class=" col-sm-12 col-md-4 mb-4">
+				<button class="btn btn-lg btn-outline-dark" data-toggle="collapse" data-target="#weightConverters" aria-controls="weightConverters" aria-expanded="false" id="time-button">Weight Converters</button>
+				
+				<div class="collapse" id="weightConverters">
+				<button class="btn btn-md btn-primary mt-3 pounds" id="pounds-button" data-toggle="collapse" data-target="#pounds-converter" aria-controls="pounds-converter" aria-expanded="false"><span>Pounds Converter</span></button>
+				
+				<div class="collapse" id="pounds-converter">
+					<form>
+						<input type="number" id="pounds-input" placeholder="Enter weight in pounds" class="form-controls form-controls-lg mt-3">
+						
+						
+					</form>
+					
+					<div id="pounds-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>KG:</h4>
+								<div id="kg-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Grams:</h4>
+								<div id="gram-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Ounces:</h4>
+								<div id="ounce-output"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+					<br>
+				<button class="btn btn-md btn-primary mt-3 kg" id="kg-button" data-toggle="collapse" data-target="#kg-converter" aria-controls="kg-converter" aria-expanded="false"><span>Kg Converter</span></button>	
+					<div class="collapse" id="kg-converter">
+						<form>
+						<input type="number" id="kg-input" placeholder="Enter weight in pounds" class="form-controls form-controls-lg mt-3">
+						
+						
+					</form>
+					
+					<div id="kg-output">
+					
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Pounds:</h4>
+								<div id="poundsKg-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Grams:</h4>
+								<div id="gramKg-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Ounces:</h4>
+								<div id="ounceKg-output"></div>
+							</div>
+						</div>
+					</div>
+					
+					</div>
+					<br>
+					
+					<button class="btn btn-md btn-primary mt-3 kg" id="ounce-button" data-toggle="collapse" data-target="#ounce-converter" aria-controls="ounce-converter" aria-expanded="false"><span>Ounce Converter</span></button>	
+					
+					<div class="collapse" id="ounce-converter">
+						<form>
+						<input type="number" id="ounce-input" placeholder="Enter weight in pounds" class="form-controls form-controls-lg mt-3">
+					</form>
+					
+					<div id="ounce-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Pounds:</h4>
+								<div id="poundOunce-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Grams:</h4>
+								<div id="gramOunce-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>KG:</h4>
+								<div id="kgOunce-output"></div>
+							</div>
+						</div>
+					</div>
+					
+					</div>
+					
+				</div>
+			</div>
+			
+	<!----------------Distance converter-------------------->		
+			
+			<div class=" col-sm-12 col-md-4 mb-4">
+				<button class="btn btn-lg btn-outline-dark" data-toggle="collapse" data-target="#distanceConverters" aria-controls="distanceConverters" aria-expanded="false" id="time-button">Distance Converters</button>
+				
+				<div class="collapse" id="distanceConverters">
+				<button class="btn btn-primary btn-sm" id="km-button" data-target="#km-converter" data-toggle="collapse" aria-controls="km-converter" aria-expanded="false"><span>Km</span></button>
+				
+				<div class="collapse" id="km-converter">
+					
+					<form><input type="number" id="km-input" placeholder="Enter distance in Km's" class="form-controls form-controls-lg mt-3"></form>
+					
+					<div id="km-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Meters:</h4>
+								<div id="kmTom-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Centi-meters:</h4>
+								<div id="kmToCm-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Mili-meters:</h4>
+								<div id="kmToMM-output"></div>
+							</div>
+						</div>
+					</div>
+					
+						
+				</div>
+				<br>
+				<button class="btn btn-primary btn-sm" id="m-button" data-target="#m-converter" data-toggle="collapse" aria-controls="m-converter" aria-expanded="false"><span>M</span></button>
+				
+				<div class="collapse" id="m-converter">
+					
+					<form><input type="number" id="m-input" placeholder="Enter distance in M's" class="form-controls form-controls-lg mt-3"></form>
+					
+					<div id="m-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Meters:</h4>
+								<div id="mToKm-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Centi-meters:</h4>
+								<div id="mToCm-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Mili-meters:</h4>
+								<div id="mToMM-output"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			    <br>
+				
+				<button class="btn btn-primary btn-sm" id="cm-button" data-target="#cm-converter" data-toggle="collapse" aria-controls="cm-converter" aria-expanded="false"><span>CM</span></button>
+					<div class="collapse" id="cm-converter">
+					
+					<form><input type="number" id="cm-input" placeholder="Enter distance in Cm's" class="form-controls form-controls-lg mt-3"></form>
+					
+					<div id="cm-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Meters:</h4>
+								<div id="cmToKm-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Centi-meters:</h4>
+								<div id="cmTom-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Mili-meters:</h4>
+								<div id="cmToMM-output"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<br>
+				<button class="btn btn-primary btn-sm" id="mm-button" data-target="#mm-converter" data-toggle="collapse" aria-controls="mm-converter" aria-expanded="false"><span>MM</span></button>
+					<div class="collapse" id="mm-converter">
+					
+					<form><input type="number" id="mm-input" placeholder="Enter distance in MM's" class="form-controls form-controls-lg mt-3"></form>
+					
+					<div  id="mm-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Meters:</h4>
+								<div id="mmToKm-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Centi-meters:</h4>
+								<div id="mmTom-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Mili-meters:</h4>
+								<div id="mmToCm-output"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+			
+	<!--------------------Time COnverter----------------------------------->		
+			
+			<div class=" col-sm-12 col-md-4 mb-4">
+				<button class="btn btn-lg btn-outline-dark" data-toggle="collapse" data-target="#timeConverters" aria-controls="timeConverters" aria-expanded="false" id="time-button">Time Converters</button>
+				
+				<div class="collapse" id="timeConverters">
+					<button class="btn btn-primary btn-sm" id="hr-button" data-target="#hr-converter" data-toggle="collapse" aria-controls="hr-converter" aria-expanded="false"><span>Hours</span></button>
+				
+				<div class="collapse" id="hr-converter">
+					
+					<form><input type="number" id="hr-input" placeholder="Enter no,of hr's" class="form-controls form-controls-lg mt-3"></form>
+					
+					<div id="hr-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Seconds:</h4>
+								<div id="hrToSec-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Minutes:</h4>
+								<div id="hrToMin-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Days:</h4>
+								<div id="hrTodays-output"></div>
+							</div>
+						</div>
+					</div>
+					
+						
+				</div>
+				<br>
+				<button class="btn btn-primary btn-sm" id="min-button" data-target="#min-converter" data-toggle="collapse" aria-controls="min-converter" aria-expanded="false"><span>Minutes</span></button>
+				
+				<div class="collapse" id="min-converter">
+					
+					<form><input type="number" id="min-input" placeholder="Enter no,of minutes's" class="form-controls form-controls-lg mt-3"></form>
+					
+					<div id="min-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Seconds:</h4>
+								<div id="minToSec-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Hours:</h4>
+								<div id="minToHr-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Days:</h4>
+								<div id="minToDays-output"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			    <br>
+				
+				<button class="btn btn-primary btn-sm" id="sec-button" data-target="#sec-converter" data-toggle="collapse" aria-controls="sec-converter" aria-expanded="false"><span>Seconds</span></button>
+					<div class="collapse" id="sec-converter">
+					
+					<form><input type="number" id="sec-input" placeholder="Enter no,of seconds" class="form-controls form-controls-lg mt-3"></form>
+					
+					<div id="sec-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Minutes:</h4>
+								<div id="secToMin-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Hours:</h4>
+								<div id="secToHr-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Days:</h4>
+								<div id="secToDays-output"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<br>
+				<button class="btn btn-primary btn-sm" id="day-button" data-target="#day-converter" data-toggle="collapse" aria-controls="day-converter" aria-expanded="false"><span>Days</span></button>
+					<div class="collapse" id="day-converter">
+					
+					<form><input type="number" id="day-input" placeholder="Enter no,of days's" class="form-controls form-controls-lg mt-3"></form>
+					
+					<div  id="day-output">
+						<div class="card bg-primary mt-3 ">
+							<div class="card-body">
+								<h4>Hours:</h4>
+								<div id="dayTohr-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-secondary mt-3 ">
+							<div class="card-body">
+								<h4>Minutes:</h4>
+								<div id="dayToMin-output"></div>
+							</div>
+						</div>
+						
+						<div class="card bg-success mt-3 ">
+							<div class="card-body">
+								<h4>Seconds:</h4>
+								<div id="dayToSec-output"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<!--------------------------------Figures Section------------------------------------->
+		
+		<div class="jumbotron"><h3 class="display-4">Figures:-</h3>
+		<div class="container-fluid figures">
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+			
+			<button class="btn btn-lg btn-outline-dark" id="circle-button"  type="button" data-toggle="collapse" data-target="#circle-box" aria-expanded="false" aria-controls="circle-box">Circle</button>
+		  </div>
+		
+			<div class="col-sm-6 col-md-3">
+			<button class="btn btn-lg btn-outline-dark" id="triangle-button" type="button" data-toggle="collapse" data-target="#triangle-box" aria-expanded="false" aria-controls="triangle-box">Triangle</button>
+		  </div>
+		
+			<div class="col-sm-6 col-md-3">
+			<button class="btn btn-lg btn-outline-dark" id="square-button" data-toggle="collapse" data-target="#square-box" aria-expanded="false" aria-controls="square-box">Square</button>
+		  </div>
+		
+			<div class="col-sm-6 col-md-3">
+			<button class="btn btn-lg btn-outline-dark" id="rectangle-button" data-toggle="collapse" data-target="#rectangle-box" aria-controls="rectangle-box" aria-expanded="false">Rectangle</button>
+		  </div>
+			</div>
+		</div>
+	  	
+	  	<!------------------Jumbotron Elements----------------->
+		  	
+		<!---------------------Jumbotron CIrcle---------------->  	
+		  	
+		  	<div class="jumbotron circle mt-5 collapse" id="circle-box">
+		  		<div class="container">
+		  		<div class="row">
+		  		<div class="col-sm-6 col-md-3">
+		  		
+		  		<button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#diameter-circle" aria-expanded="false" aria-controls="diameter-circle">Diameter</button>
+		  		
+		  		<div class="collapse mt-3" id="diameter-circle">
+		  			<form><input id="diameter-input" type="number" class="form-controls form-controls-lg" placeholder="Enter the value of radius"></form>
+		  			<button  class="btn btn-sm mt-2" id="calculate-button">Calculate</button>
+		  			<p id="diameter"></p>
+		  		</div>
+		  		
+		  	</div>
+		  	
+		  	 <div class="col-sm-6 col-md-3">
+		  		
+		  		<button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#circum-circle" aria-expanded="false" aria-controls="circum-circle">Circumference</button>
+		  		
+		  		<div class="collapse mt-3" id="circum-circle">
+		  			<form><input id="circumr-input" type="number" class="form-controls form-controls-lg" placeholder="Enter the value of radius"></form>
+		  			<button  class="btn btn-sm mt-2" id="circum-button">Calculate</button>
+		  			<p id="circumference"></p>
+		  		</div>
+		  		
+		  	</div>
+		  	
+		  	<div class="col-sm-6 col-md-3">
+		  		
+		  		<button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#areaCircle-circle" aria-expanded="false" aria-controls="areaCircle-circle">Area of Circle</button>
+		  		
+		  		<div class="collapse mt-3" id="areaCircle-circle">
+		  			<form><input id="areaCircle-input" type="number" class="form-controls form-controls-lg" placeholder="Enter the value of radius"></form>
+		  			<button  class="btn btn-sm mt-2" id="areaCircle-button">Calculate</button>
+		  			<p id="circle-area"></p>
+		  		</div>
+		  		
+		  	</div>
+		  	
+		  	<div class="col-sm-6 col-md-3">
+		  		
+		  		<button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#arcCircle-circle" aria-expanded="false" aria-controls="arcCircle-circle">Arc of Circle</button>
+		  		
+		  		<div class="collapse mt-3" id="arcCircle-circle">
+		  			<form><input id="arcCircle-radius" type="number" class="form-controls form-controls-lg" placeholder="Enter the value of radius">
+		  			<input id="arcCircle-c" type="number" class="form-controls form-controls-lg" placeholder="Enter angle of arc">
+		  			</form>
+		  			<button  class="btn btn-sm mt-2" id="arcCircle-button">Calculate</button>
+		  			<p id="circle-arc"></p>
+		  		</div>
+		  		
+		  	</div>
+		  	
+		  </div>
+		</div> 
+	</div>
+	
+	<!------------------------Jumbotron Triangle------------------------->
+	
+	<div class="jumbotron triangle mt-5 collapse" id="triangle-box">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-6 col-md-4">
+					<button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#area-triangle" aria-expanded="false" aria-controls="area-triangle">Area of Triangle</button>
+					
+					<div class="collapse" id="area-triangle">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-offset-4 ">
+								<button id="conventional" class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#conventional-method" aria-expanded="false" aria-controls="conventional-method">Conventional Method</button>
+								
+								<div class="collapse" id="conventional-method">
+									<form>
+										<input id="conventional-height" type="number" class="form-controls form-controls-lg" placeholder="Height">
+										<input id="conventional-base" type="number" class="form-controls form-controls-lg" placeholder="Base">
+										<br>
+										<button  class="btn btn-sm mt-2" id="conventional-button" type="button">Calculate</button>
+										<p id="conventional-para"></p>
+									</form>
+									</div>
+								</div>
+								
+								<div class="col-sm-offset-4 ml-2">
+								<button id="Sas" class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#sas-method" aria-expanded="false" aria-controls="sas-method">SAS Method</button>
+								
+								<div class="collapse" id="sas-method">
+									<form>
+										<input id="sas-height" type="number" class="form-controls form-controls-lg" placeholder="Height">
+										<input id="sas-base" type="number" class="form-controls form-controls-lg" placeholder="Height">
+										<input id="sas-angle" type="number" class="form-controls form-controls-lg" placeholder="Angle">
+										
+										<button class="btn btn-lg" id="sas-button" type="button">Calculate</button>
+										
+										<p id="sas-para"></p>
+									</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+							
+					</div>
+				<div class="col-sm-6 col-md-4">
+					<button class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#herons-formula" aria-expanded="false" aria-controls="herons-formula" type="button">Heron's Formula</button>
+					
+					<div class="collapse" id="herons-formula">
+						<form> 
+						<input type="number" id="herons-A" class="form-controls form-controls-lg" placeholder="Enter value of A.">
+						<input type="number" id="herons-B" class="form-controls form-controls-lg" placeholder="Enter value of B.">
+						<input type="number" id="herons-C" class="form-controls form-controls-lg" placeholder="Enter value of C.">
+						</form>
+						
+						<button class="btn btn-lg" id="herons-calculate" type="button">Calculate</button>
+						
+						<p id="herons-para"></p>
+					</div>
+				</div>
+					
+					<div class="col-sm-6 col-md-4">
+					
+					<button  class="btn btn-lg btn-primary" id="pythagoras-button" data-toggle="collapse" data-target="#pyhtagoras-theoram" aria-expanded="false" aria-controls="pyhtagoras-theoram">Pythagoras Theoram</button>
+						
+						<div class="collapse" id="pyhtagoras-theoram">
+							<input type="number" class="form-controls form-controls-lg mt-3" id="pythagoras-1" placeholder="enter value fo A">
+							
+							<input type="number" class="form-controls form-controls-lg mt-3" id="pythagoras-2" placeholder="enter value fo B">
+							
+							<input type="number" class="form-controls form-controls-lg mt-3" id="pythagoras-3" placeholder="enter value fo C">
+							
+							<button class="btn btn-lg mt-2" id="pythagoras-calculate" type="button">Calculate</button>
+							
+							<p id="pythagoras-para"></p>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		<!-----------------------Jumbotron Square------------------------->
+		<div class="jumbotron square collapse mt-5" id="square-box">
+			<div class="container">
+				<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<button id="square-areaButton" class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#square-area" aria-controls="square-area"  aria-expanded="false" type="button">Area of Square</button>
+					 
+					 <div class="collapse" id="square-area">
+					 	<form>
+					 		<input type="number" class="form-controls -form-controls-lg mt-3" placeholder="Enter length of a side" id="square-Alength">
+					 		
+					 		<button class="btn btn-lg mt-2" id="square-Acalculate" type="button">Calculate</button>
+					 		
+					 		<p id="square-Apara"></p>
+					 	</form>
+					 </div>
+					
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<button id="square-perimeterButton" class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#square-perimeter" aria-controls="square-perimeter"  aria-expanded="false" type="button">Perimeter of Square</button>
+					 
+					 <div class="collapse" id="square-perimeter">
+					 	<form>
+					 		<input type="number" class="form-controls -form-controls-lg mt-3" placeholder="Enter length of a side" id="square-Plength">
+					 		
+					 		<button class="btn btn-lg mt-2" id="square-Pcalculate" type="button">Calculate</button>
+					 		
+					 		<p id="square-Ppara"></p>
+					 	</form>
+					 </div>
+					
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<button id="square-diagonalButton" class="btn btn-lg btn-primary" data-toggle="collapse" data-target="#square-diagonal" aria-controls="square-diagonal"  aria-expanded="false" type="button">Perimeter of Square</button>
+					 
+					 <div class="collapse" id="square-diagonal">
+					 	<form>
+					 		<input type="number" class="form-controls -form-controls-lg mt-3" placeholder="Enter length of a side" id="square-Dlength">
+					 		
+					 		<button class="btn btn-lg mt-2" id="square-Dcalculate" type="button">Calculate</button>
+					 		
+					 		<p id="square-Dpara"></p>
+					 	</form>
+					 </div>
+					
+				</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!-------------------------Rectanlge box------------------------->
+		<div class="jumbotron mt-5 collapse" id="rectangle-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+				<button class="btn btn-primary btn-lg" id="rectangle-Abutton" data-toggle="collapse" data-target="#area-rectangle" aria-controls="area-rectangle" type="button">Area of Rectangle</button>
+				
+				<div class="collapse mt-2" id="area-rectangle">
+					<form>
+						<input type="number" id="rectangle-Alength" class="form-controls form-controls-lg" placeholder="Enter Length">
+						<input type="number" id="rectangle-Abreadth" class="form-controls form-controls-lg" placeholder="Enter Breadth">
+						
+						<button class="btn btn-lg mt-2" id="rectanlge-Acalculate" type="button">Calculate</button>
+						
+						<p id="rectangle-Apara"></p>
+					</form>
+				</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<button class="btn btn-primary btn-lg" id="rectangle-Pbutton" data-toggle="collapse" data-target="#perimeter-rectangle" aria-controls="perimeter-rectangle" type="button">Perimeter of Rectangle</button>
+				
+				<div class="collapse mt-2" id="perimeter-rectangle">
+					<form>
+						<input type="number" id="rectangle-Plength" class="form-controls form-controls-lg" placeholder="Enter Length">
+						<input type="number" id="rectangle-Pbreadth" class="form-controls form-controls-lg" placeholder="Enter Breadth">
+						
+						<button class="btn btn-lg mt-2" id="rectanlge-Pcalculate" type="button">Calculate</button>
+						
+						<p id="rectangle-Ppara"></p>
+					</form>
+				</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<button class="btn btn-primary btn-lg" id="rectangle-Dbutton" data-toggle="collapse" data-target="#diagonal-rectangle" aria-controls="diagonal-rectangle" type="button">Diagonal of Rectangle</button>
+				
+				<div class="collapse mt-2" id="diagonal-rectangle">
+					<form>
+						<input type="number" id="rectangle-Dlength" class="form-controls form-controls-lg" placeholder="Enter Length">
+						<input type="number" id="rectangle-Dbreadth" class="form-controls form-controls-lg" placeholder="Enter Breadth">
+						
+						<button class="btn btn-lg mt-2" id="rectanlge-Dcalculate" type="button">Calculate</button>
+						
+						<p id="rectangle-Dpara"></p>
+					</form>
+				</div>
+			</div>
+			
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+		
+	</div>
+	
+	<br>
+	
+	
+  
+	
+	
+	
+	<br>
+	
+	
+	
+	
+	
+	
+	<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@charlesdeluvio?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Charles Deluvio 🇵🇭🇨🇦"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Charles Deluvio 🇵🇭🇨🇦</span></a>
+	<script src="maths.js"></script>
+</body>
+</html>

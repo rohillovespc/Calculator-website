@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>R-Calculators.com</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Raleway|Sunflower:300|Titillium+Web|Roboto" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="finance.css">
+</head>
+
+<body>
+
+	<!----------------------------Navigaetion Bat----------------------------->
+	<nav class="navbar navbar-expand-md navbar-light bg-light nav-fill" id="navbar">
+		<a class="navbar-brand mt-2" href="#"><img id="logo" src="Images/logo.png" alt="R-Calculators.com"></a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-elements" aria-expanded="false" aria-controls="navbar-elements" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbar-elements">
+			<div class="container">
+
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact-me.html">Contanct Me!</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+	<h1 class="display-3" id="finance-heading">Finance calculators</h1>
+	<div class="container-fluid">
+		<div class="jumbotron finance">
+			<div class="container finan">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 mt-4">
+						<button class="btn btn-outline-dark btn-lg" id="Si-button" data-toggle="collapse" data-target="#simple-interest" aria-controls="simple-interest" aria-expanded="false"><span>S.I. CALCULATOR</span></button>
+
+						<div class="collapse" id="simple-interest">
+							<div class="jumbotron si">
+								<p class="text-justify">Simple interest is money you can earn by initially investing some money (the principal).A percentage (the interest) of the principal is added to the principal, making your initial investment grow!</p>
+								<p> Formula to calculate Simple Interest is :- <span>P x R x T</span> </p>
+								<label>Money loaned or borrowed :-</label>
+								<input class="form-controls form-controls-lg" type="number" placeholder="Enter amount" id="Si-Loan">
+
+								<label>Interest Rate :-</label>
+								<input class="form-controls form-controls-lg" type="number" placeholder="Enter amount" id="Si-interest">
+								<br>
+								<label>Enter months</label>
+								<input type="number" class="form-controls form-controls-lg" id="si-months">
+
+								<button id="calculate-si" class="btn btn-lg mt-3">Calculate</button>
+								<p id="si-para"></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 mt-4">
+						<button class="btn btn-outline-dark btn-lg " id="emi-button" data-toggle="collapse" data-target="#emi" aria-controls="emi" aria-expanded="false"><span>E.M.I. CALCULATOR</span></button>
+
+						<div class="collapse" id="emi">
+							<div class="jumbotron emi">
+								<p class="text-justify">A loan is a financial agreement between two parties, a lender and a borrower. Under this agreement, the lender gives a specific amount of money to the borrower with the intent that the amount borrowed is paid back with interest as monthly installments over a predetermined period of time by the borrower. Using an EMI calculator is the easiest way to determine your monthly payouts and balance your budget accordingly. </p>
+								<p> Formula to calculate Equated Monthly Payment is :<br> <span>[P x R x (1+R)^N]/[(1+R)^N-1]</span> </p>
+								<label>Money loaned or borrowed :-</label>
+								<input class="form-controls form-controls-lg" type="number" placeholder="Enter amount" id="emi-loan">
+
+								<label>Interest Rate :-</label>
+								<input class="form-controls form-controls-lg" type="number" placeholder="Enter amount" id="emi-interest">
+								<br>
+								<label>Enter months</label>
+								<input type="number" class="form-controls form-controls-lg" id="emi-installment">
+
+								<button id="calculate-emi" class="btn btn-lg mt-3">Calculate</button>
+								<p id="emi-para"></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 mt-4">
+						<button class="btn btn-outline-dark btn-lg" id="Dtf-button" data-toggle="collapse" data-target="#dtf" aria-controls="dtf" aria-expanded="false"><span>DOUBLE TIME CALC.</span></button>
+
+						<div class="collapse" id="dtf">
+							<div class="jumbotron dtf">
+								<p class="text-justify">The Doubling Time formula is used in Finance to calculate the length of time required to double an investment or money in an interest bearing account.It is important to note that r in the doubling time formula is the rate per period. If one wishes to calculate the amount of time to double their money in a money market account that is compounded monthly, then r needs to express the monthly rate and not the annual rate.</p>
+								<p> Formula to Doubling Time is :<br> <span> log(2)/log(1+r)</span> </p>
+								<label>Enter rate of interest :-</label>
+								<input class="form-controls form-controls-lg" type="number" placeholder="Enter rate of interest" id="dtf-rate">
+
+
+
+								<button id="calculate-dtf" class="btn btn-lg mt-3">Calculate</button>
+								<p id="dtf-para"></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 mt-4">
+						<button class="btn btn-outline-dark btn-lg" id="Compound-button" data-toggle="collapse" data-target="#compound" aria-controls="compound" aria-expanded="false"><span>C.I. CALCULATOR</span></button>
+
+						<div class="collapse" id="compound">
+							<div class="jumbotron compound">
+								<p class="text-justify">The compound interest formula calculates the amount of interest earned on an account or investment where the amount earned is reinvested. By reinvesting the amount earned, an investment will earn money based on the effect of compounding.Compounding is the concept that any amount earned on an investment can be reinvested to create additional earnings that would not be realized based on the original principal, or original balance,alone.</p>
+								<p> Formula to Doubling Time is :<br> <span> C=P[(1+r)^n -1] </span> </p>
+								<label>Enter Principle Amount :-</label>
+								<input class="form-controls form-controls-lg" type="number" placeholder="Principle amount" id="compound-principle">
+
+								<label>Rate of interest :-</label>
+								<input class="form-controls form-controls-lg" type="number" placeholder="Rate of interest" id="compound-rate">
+
+								<label>Enter Number of periods :-</label>
+								<input class="form-controls form-controls-lg" type="number" placeholder="Number of periods" id="compound-period">
+
+
+
+								<button id="calculate-compound" class="btn btn-lg mt-3">Calculate</button>
+								<p id="compound-para"></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="finance.js"></script>
+</body>
+</html>

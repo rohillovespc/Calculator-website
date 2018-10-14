@@ -1,0 +1,257 @@
+
+
+body{
+	 background: url(Images/charles-deluvio-456506-unsplash.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+	color: #fff8f8;
+	background-color: rgba(75, 9, 9, 0.23);
+	background-blend-mode: color-burn;
+}
+
+
+#main-heading h1{
+	margin-left: 15px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.64);
+	word-spacing: 4px;
+	letter-spacing: 2px;
+	opacity: 0;
+	animation-name: mathsheading;
+	animation-delay: 0.5s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	position: relative;
+}
+
+@keyframes mathsheading {
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+
+
+
+#pounds-button{
+	height: 45px;
+	width: 180px;
+	background-color: #5d9395;
+	margin-left:7px;
+}
+
+#pounds-button span{
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px #000000;
+}
+
+#kg-button{
+	height: 45px;
+	width: 180px;
+	background-color: #d4a465;
+	margin-left:7px;
+}
+#kg-button span{
+	font-size: 19px;
+	word-spacing: 2px;
+	text-shadow:0.1px 0.5px 2px #000000;
+}
+
+#ounce-button{
+	height: 45px;
+	width: 180px;
+	background-color: rgba(255, 51, 51, 0.72);
+	margin-left:7px;
+}
+
+#ounce-button span{
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+/*----------------------Timers----------------------------*/
+#day-button {
+	height: 45px;
+	width: 180px;
+	background-color: rgba(255, 51, 51, 0.72);
+	
+	margin-top: 15px;
+}
+#day-button span {
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+
+#hr-button {
+	height: 45px;
+	width: 180px;
+	background-color: rgb(91, 7, 123);
+	
+	margin-top: 15px;
+}
+#hr-button span {
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+
+#min-button {
+	height: 45px;
+	width: 180px;
+	background-color: rgba(141, 36, 36, 0.72);
+	
+	margin-top: 15px;
+}
+
+#min-button span {
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+
+#sec-button {
+	height: 45px;
+	width: 180px;
+	background-color: rgb(43, 2, 160);
+	
+	margin-top: 15px;
+	
+}
+
+#sec-button span {
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+
+#km-button {
+	height: 45px;
+	width: 180px;
+	background-color: rgb(239, 133, 8);
+	
+	margin-top: 15px;
+	
+}
+
+#km-button span {
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+
+#m-button {
+	height: 45px;
+	width: 180px;
+	background-color: rgb(47, 27, 103);
+	
+	margin-top: 15px;
+	
+}
+
+#m-button span {
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+
+#cm-button {
+	height: 45px;
+	width: 180px;
+	background-color: rgb(160, 149, 2);
+	
+	margin-top: 15px;
+	
+}
+
+#cm-button span {
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+
+
+#mm-button {
+	height: 45px;
+	width: 180px;
+	background-color: rgb(2, 160, 90);
+	
+	margin-top: 15px;
+	
+}
+
+#mm-button span {
+	font-size: 19px;
+    text-shadow:0.1px 0.2px 2px rgba(0, 0, 0, 0.32);
+}
+
+
+/*--------------------Figures-------------------*/
+
+
+.jumbotron {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.68);
+	
+	
+}
+.jumbotron.converters{
+	background-color: rgba(186, 156, 255, 0.77)
+}
+.jumbotron:hover{
+	-webkit-box-shadow: 0px -1px 24px 1px rgba(144,240,163,1);
+-moz-box-shadow: 0px -1px 24px 1px rgba(144,240,163,1);
+box-shadow: 0px -1px 24px 1px rgba(144,240,163,1);
+	
+
+}
+
+.col-sm-6.col-md-3 {
+	margin-top: 25px
+}
+
+#circle-button{
+	width:150px;
+	height:65px;
+	font-size:25px;
+	margin-left:15px
+}
+
+#triangle-button{
+	width:150px;
+	height:65px;
+	font-size:25px;
+	margin-left:15px
+}
+
+#square-button{
+	
+	width:150px;
+	height:65px;
+	font-size:25px;
+	margin-left:15px
+}
+
+#rectangle-button{
+	width:150px;
+	height:65px;
+	font-size:25px;
+	margin-left:15px
+}
+
+#circle-box{
+	max-height: none;
+	background-color: rgba(211, 206, 206, 0.68);
+	padding: 10px,10px,10ox,12px;
+}
+#circle-box:hover{
+	background-color: rgba(255, 255, 255, 0.68)
+}
+
+#diameter{
+	margin-top: 4px;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+#circumference{
+	margin-top: 4px;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+
+
+

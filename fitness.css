@@ -1,0 +1,17 @@
+body{
+	 background: url(Images/fitness.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+	color:black;
+	background-color: rgba(75, 9, 9, 0.5);
+	background-blend-mode: color-burn;
+}
+
+#fitness-heading {
+	margin-left: 30px;
+	color: white;
+	text-shadow: 2px 2px 5px #000000;
+}
